@@ -12,7 +12,7 @@ pipeline {
         stage('buildApp') {
           steps {
             sh 'sleep infinity'
-            sh 'cd ci && /build-app.sh'
+            sh 'cd ci && ./build-app.sh'
           }
         }
 
