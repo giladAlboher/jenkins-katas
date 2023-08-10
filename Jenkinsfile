@@ -2,7 +2,7 @@ pipeline {
   agent any
   tools{
     gradle 'gradle 8.3'
-    dockertool 'docker'
+    dockerTool 'docker'
   }
   stages {
     stage('Parallel execution') {
