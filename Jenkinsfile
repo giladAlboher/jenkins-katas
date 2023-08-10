@@ -11,7 +11,8 @@ pipeline {
 
         stage('buildApp') {
           steps {
-            sh 'cd ci && ./build-app.sh'
+            sh 'sleep infinity'
+            sh 'cd ci && /build-app.sh'
           }
         }
 
