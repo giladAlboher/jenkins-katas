@@ -6,7 +6,7 @@ pipeline {
 
   }
   stages {
-    stage('hello') {
+    stage('Parallel execution') {
       parallel {
         stage('hello') {
           steps {
