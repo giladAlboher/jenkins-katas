@@ -16,7 +16,8 @@ pipeline {
 
         stage('buildApp') {
           steps {
-            sh 'ci/build-app.sh'
+            sh '''cd ci
+./build-app.sh'''
           }
         }
 
