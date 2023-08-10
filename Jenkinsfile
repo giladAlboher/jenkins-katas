@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'gradle:6-jdk11'
-    }
-
-  }
+  agent any
   stages {
     stage('Parallel execution') {
       parallel {
@@ -16,7 +11,7 @@ pipeline {
 
         stage('buildApp') {
           steps {
-            sh 'echo "lalalalala"'
+            sh 'cd ci && ./build-app.sh'
           }
         }
 
