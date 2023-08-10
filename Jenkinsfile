@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  tools{
+    gradle 'gradle 8.3'
+  }
   stages {
     stage('Parallel execution') {
       parallel {
